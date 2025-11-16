@@ -5,21 +5,21 @@
 class Gobloggen < Formula
   desc "Unopinionated static site generator for markdown-based blogs"
   homepage "https://github.com/harrydayexe/GoBlog"
-  version "0.2.8"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.2.8/GoBlog_0.2.8_Darwin_x86_64.tar.gz"
-      sha256 "e9326a3df2c302779d7e2023ba0476eae9655355139e8c3ed5656ee1bd8ce1c4"
+      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.3.0/GoBlog_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "edc8c1bebef3e8b64cb17ca6ab05fb6bc367641137b38279ab14202b9769c036"
 
       def install
         bin.install "gobloggen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.2.8/GoBlog_0.2.8_Darwin_arm64.tar.gz"
-      sha256 "fe92de3d2a6cde44caacc71c9bd57bb6a8b7b906937a9e2daf91bea3f19b82c6"
+      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.3.0/GoBlog_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "8b3a1908fa01dee7aa5e43037517fa1426ea12185aaefba9a6a8dc54618785f8"
 
       def install
         bin.install "gobloggen"
@@ -29,15 +29,15 @@ class Gobloggen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.2.8/GoBlog_0.2.8_Linux_x86_64.tar.gz"
-      sha256 "9f756b2526fe6a921af1f1b510a99e8f997723dacfc20c2b26d91bd84a2cebba"
+      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.3.0/GoBlog_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "02f5ec966d67bec60de766bad4f5ce14291edd530225774c72bbd4f251f66933"
       def install
         bin.install "gobloggen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.2.8/GoBlog_0.2.8_Linux_arm64.tar.gz"
-      sha256 "1be4b73d2f89ff14793db994a1a0f95ec3a802d051d50f4f8165a13263af9d70"
+      url "https://github.com/harrydayexe/GoBlog/releases/download/v0.3.0/GoBlog_0.3.0_Linux_arm64.tar.gz"
+      sha256 "30fdeac1f36a5532c1ea8829ae84367af427bc19b7eab3f01e76051f82421ac2"
       def install
         bin.install "gobloggen"
       end
